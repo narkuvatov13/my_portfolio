@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel aa</title>
+    <title>{{ env('APP_NAME') }}</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -17,7 +17,7 @@
 </head>
 
 <body class="font-sans antialiased dark:bg-black dark:text-white/50">
-    <h1 class="text-3xl font-bold underline">
+    <h1 class="text-3xl font-bold  text-purple-500 underline">
         Hello world!
     </h1>
 </body>
