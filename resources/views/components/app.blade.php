@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html class="dark" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">
@@ -21,14 +21,18 @@
     <!-- <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> -->
 </head>
 
-<body class="font-sans antialiased dark:bg-black dark:text-white/50">
+<body class="font-sans antialiased bg-white dark:bg-slate-900 ">
 
     <x-navbar></x-navbar>
 
     {{ $slot }}
 
     <x-frontend-layout>
-        <p class=" font-sans">Test</p>
+        <div class="flex justify-center">
+            <button class="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">Test</button>
+
+        </div>
+
     </x-frontend-layout>
 
 </body>
