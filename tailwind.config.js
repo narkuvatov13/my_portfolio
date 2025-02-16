@@ -20,8 +20,8 @@ export default {
                 // (paragraph and text) text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300
                 // title text-slate-900 tracking-tight dark:text-slate-200
                 // backgrouncolor  bg-slate-900 
-                // "primary": 'pink-400'
-                // "primary-hover":"'pink-500"
+                // "primary": 'sky-400'
+                // "primary-hover":"'sky-500"
                 // 'title': "#F1F5F9",
                 // 'paragraph': "#B1B7BF",
                 // 'hover': "#CBD5E1",

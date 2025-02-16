@@ -27,11 +27,15 @@
 
     {{ $slot }}
 
+    <div class="mb-96 mt-96 p-96 bg-white">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus pariatur voluptatum dolor, nobis iusto animi quae? Sed, ratione accusamus mollitia laudantium quae dignissimos sit exercitationem doloribus, modi dolorem repudiandae esse.</h1>
+    </div>
     <x-frontend-layout>
-        <div class="flex justify-center">
+        <div class="flex justify-center mb-96 mt-96">
             <button class="bg-slate-900 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 text-white font-semibold h-12 px-6 rounded-lg w-full flex items-center justify-center sm:w-auto dark:bg-sky-500 dark:highlight-white/20 dark:hover:bg-sky-400">Test</button>
 
         </div>
+
 
     </x-frontend-layout>
 
