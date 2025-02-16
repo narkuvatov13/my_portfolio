@@ -21,12 +21,14 @@
     <!-- <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> -->
 </head>
 
-<body class="font-sans antialiased bg-white dark:bg-slate-900 ">
+<body class="font-sans antialiased bg-white dark:bg-slate-900">
 
     <x-navbar></x-navbar>
 
-    {{ $slot }}
-    <div class="mt-96 mb-96 ">sadasd</div>
+    <div class="px-16">
+        {{ $slot }}
+    </div>
+    <!-- <div class="mt-96 mb-96 ">sadasd</div> -->
     <x-footer></x-footer>
 </body>
 

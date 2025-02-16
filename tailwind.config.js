@@ -25,7 +25,8 @@ export default {
                 // 'title': "#F1F5F9",
                 // 'paragraph': "#B1B7BF",
                 // 'hover': "#CBD5E1",
-                // 'bgPrimary': "#0F172A",      
+                // 'bgPrimary': "#0F172A",     
+                // container : px-16 
             }
         },
     },

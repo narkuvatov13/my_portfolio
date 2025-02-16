@@ -1,9 +1,9 @@
 <div class="sticky top-0 z-10">
-    <nav x-data="{ isOpen: false }" class="dark:bg-slate-900 backdrop-blur-sm  dark:backdrop-blur-2xl  shadow-md dark:border-slate-800/50 border-b">
-        <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
+    <nav x-data="{ isOpen: false }" class="bg-white/50 backdrop-blur-xl shadow dark:bg-slate-900/50 dark:border-slate-800 dark:border-b dark:backdrop-blur-xl">
+        <div class="container px-16 py-4 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
-                <a href="#">
-                    <h4 class="text-slate-700 text-2xl font-bold hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-200">Thecodenarsoft</h4>
+                <a href="{{ route('home') }}">
+                    <h4 class="text-slate-700 text-2xl font-bold hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-200 tracking-wide">Thecodenarsoft</h4>
                 </a>
 
                 <!-- Mobile menu button -->
@@ -21,11 +21,17 @@
             </div>
 
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute mt-4 inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-slate-900 md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
+            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute mt-4 inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-slate-800  md:dark:bg-inherit md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
                 <div class="flex flex-col md:flex-row md:mx-6">
-                    <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">Projects</a>
-                    <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">About</a>
-                    <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">Contact</a>
+                    <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">
+                        Projects
+                    </a>
+                    <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">
+                        About
+                    </a>
+                    <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">
+                        Contact
+                    </a>
                 </div>
             </div>
         </div>
