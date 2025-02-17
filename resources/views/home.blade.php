@@ -28,21 +28,36 @@
     <section>
         <div class="container mx-auto">
             <div class="items-center lg:flex">
-                <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2  ">
-                    <img class="hidden object-cover object-center rounded-full  md:h-[20rem] md:w-[20rem]  md:block xl:h-[35rem] xl:w-[35rem]  lg:max-w-3xl " src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
+                <div class="lg:w-1/2 w-full mt-6 lg:mt-0 ">
+                    <div class="md:flex items-center justify-center ">
+                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class="object-cover object-center h-[17rem] w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup3.jpg') }}" alt="user-hero-img">
+                    </div>
+                    <div class=" md:flex items-center justify-center   ">
+                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class="object-cover object-center h-[17rem] w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup2.jpg') }}" alt="user-hero-img">
+                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class="object-cover object-center h-[17rem] w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
+                    </div>
                 </div>
 
                 <div class="w-full lg:w-1/2">
                     <div class="lg:max-w-lg">
-                        <h1 class="text-3xl font-semibold leading-relaxed tracking-wide text-slate-700 dark:text-white lg:text-4xl"> <br> {{ __('I am') }} <span class="text-sky-500 ">Thecodenarsoft.</span></h1>
+                        <h1 class="text-3xl font-semibold leading-relaxed tracking-wide text-slate-700 dark:text-white lg:text-4xl"> <br> {{ __('About Me') }}</h1>
 
                         <p class="mt-3 mb-8 text-slate-900  dark:text-gray-400 text-md leading-relaxed tracking-wide">
-                            {{ __('I’m a Full Stack Developer who loves coding, finding creative solutions to problems, and building great projects.') }} <br>
-                            {{ __('I’m passionate about web technologies and develop powerful, high-performance, and user-friendly applications using modern tools like Laravel, Livewire, Alpinejs and Tailwind CSS.') }} <br>
+                            {{ __('I am a professional passionate about software development and design.') }}
+                            {{ __('After my software engineering education, I focused on web application development.') }}
+                            {{ __('I work with modern technologies such as PHP and Javascript and develop user-oriented projects.') }}
                         </p>
-                        <x-link-button class="px-6 py-4 text-sm">
-                            {{ __('My Projects') }}
-                        </x-link-button>
+                        <p class="mt-3 mb-8 text-slate-900  dark:text-gray-400 text-md leading-relaxed tracking-wide">
+                            {{ __('As someone who is always open to learning, I take care to keep myself updated about new technologies and trends.') }}
+                            {{ __('I aim to combine aesthetics and functionality in my projects.') }}
+                            {{ __('Thanks to my teamwork and problem-solving skills, I work efficiently with teams from different disciplines.') }}
+
+                        </p>
+                        <p class="mt-3 mb-8 text-slate-900  dark:text-gray-400 text-md leading-relaxed tracking-wide">
+                            {{ __("My goal is to use technology to create solutions that will make people's lives easier.") }}
+                            {{ __('The projects in my portfolio are a reflection of this passion and professional approach.') }}
+                            {{ __('For more information and to see my projects in detail, please browse the sections below.') }}
+                        </p>
                     </div>
                 </div>
             </div>
