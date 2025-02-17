@@ -1,6 +1,6 @@
 <x-app>
     <!-- Hero Section -->
-    <section class="my-10">
+    <section class="py-10">
         <div class="container  mx-auto">
             <div class="items-center lg:flex">
                 <div class="w-full lg:w-1/2">
@@ -25,16 +25,16 @@
     </section>
 
     <!-- About Me -->
-    <section>
+    <section class="py-10">
         <div class="container mx-auto">
             <div class="items-center lg:flex">
-                <div class="lg:w-1/2 w-full mt-6 lg:mt-0 ">
-                    <div class="md:flex items-center justify-center ">
-                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class="object-cover object-center h-[17rem] w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup3.jpg') }}" alt="user-hero-img">
+                <div class="hidden md:block lg:w-1/2 w-full mt-6 lg:mt-0 ">
+                    <div class="md:flex items-center justify-center">
+                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class=" cursor-pointer opacity-95 hover:opacity-100 transition-opacity object-cover object-center md:h-[17rem] md:w-[20rem]  md:max-w-3xl  shadow-2xl shadow-sky-300 " src="{{ asset('images/user/yusup3.jpg') }}" alt="user-hero-img">
                     </div>
                     <div class=" md:flex items-center justify-center   ">
-                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class="object-cover object-center h-[17rem] w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup2.jpg') }}" alt="user-hero-img">
-                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class="object-cover object-center h-[17rem] w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
+                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class="cursor-pointer blur-md hover:blur-0 transition-all duration-1000  md:h-[17rem] md:w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup2.jpg') }}" alt="user-hero-img">
+                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class=" cursor-pointer blur-md hover:blur-0 transition-all duration-1000 object-cover object-center md:h-[17rem] md:w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
                     </div>
                 </div>
 
@@ -45,7 +45,7 @@
                         <p class="mt-3 mb-8 text-slate-900  dark:text-gray-400 text-md leading-relaxed tracking-wide">
                             {{ __('I am a professional passionate about software development and design.') }}
                             {{ __('After my software engineering education, I focused on web application development.') }}
-                            {{ __('I work with modern technologies such as PHP and Javascript and develop user-oriented projects.') }}
+                            {!! __('tech_message',['php'=>'<span class="text-sky-300 font-bold">PHP</span>','js'=>'<span class="text-sky-300 font-bold">JavaScript</span>']) !!}
                         </p>
                         <p class="mt-3 mb-8 text-slate-900  dark:text-gray-400 text-md leading-relaxed tracking-wide">
                             {{ __('As someone who is always open to learning, I take care to keep myself updated about new technologies and trends.') }}

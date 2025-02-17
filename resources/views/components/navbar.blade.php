@@ -1,6 +1,6 @@
 <!-- @props(['isDarkMode']) -->
 <div class="sticky top-0 z-10">
-    <nav x-data="{ isOpen: false }" class="bg-white/50 backdrop-blur-xl shadow dark:bg-slate-900/50 dark:border-slate-800 dark:border-b dark:backdrop-blur-xl">
+    <nav x-data="{ isOpen: false }" class="bg-white/50 backdrop-blur-xl dark:bg-slate-900/50 shadow-md  dark:shadow dark:shadow-slate-700 dark:backdrop-blur-xl">
         <div class="container px-16 py-4 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
                 <a href="{{ route('home') }}">
