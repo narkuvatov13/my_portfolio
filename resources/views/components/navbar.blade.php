@@ -25,13 +25,13 @@
             <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute mt-4 inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-slate-800  md:dark:bg-inherit md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
                 <div class="flex flex-col items-center justify-around gap-4 md:flex-row md:mx-6">
                     <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">
-                        {{ __('messages.projects') }}
+                        {{ __('Projects') }}
                     </a>
                     <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">
-                        {{ __('messages.about') }}
+                        {{ __('About') }}
                     </a>
                     <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">
-                        {{ __('messages.contact') }}
+                        {{ __('Contact') }}
                     </a>
                     <!-- Language Button -->
                     <div x-data="{ isOpen: false }" class="relative inline-block ">
@@ -56,9 +56,9 @@
                             x-transition:leave-end="opacity-0 scale-90"
                             class="absolute right-0 z-20 w-25 py-2 mt-2 origin-top-right bg-white rounded-md shadow-xl dark:bg-gray-800">
 
-                            <a href="locale/en" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">English</a>
-                            <a href="locale/tr" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Turkish</a>
-                            <a href="locale/ru" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">Russian</a>
+                            <a href="locale/en" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">{{ __('English') }}</a>
+                            <a href="locale/ru" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">{{ __('Russian') }}</a>
+                            <a href="locale/tr" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">{{ __('Turkish') }}</a>
                         </div>
                     </div>
                     <!-- Dark mode button -->

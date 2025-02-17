@@ -1,0 +1,11 @@
+{
+    "Hello, ": "Hello, :name!",
+    "Projects": "Projeler",
+    "Contact": "İletişim",
+    "About": "Hakkimda",
+    "I am": "Ben",
+    "My Name is :Name": "Benim Adım :Name",
+    "I’m a Full Stack Developer who loves coding, finding creative solutions to problems, and building great projects.": "Kodlamayı, sorunlara yaratıcı çözümler bulmayı ve harika projeler oluşturmayı seven bir Full Stack Developer'ım.",
+    "I’m passionate about web technologies and develop powerful, high-performance, and user-friendly applications using modern tools like Laravel, Livewire, Alpinejs and Tailwind CSS.": "Web teknolojileri konusunda tutkuluyum ve Laravel, Livewire, Alpinejs ve Tailwind CSS gibi modern araçları kullanarak güçlü, yüksek performanslı ve kullanıcı dostu uygulamalar geliştiriyorum.",
+    "My Projects": "Projelerim"
+}

@@ -1,0 +1,11 @@
+{
+    "Hello, ": "Hello, :name!",
+    "Projects": "Projects",
+    "Contact": "Contact",
+    "About": "About",
+    "I am": "I am",
+    "My Name is :Name": "My Name is :Name",
+    "I’m a Full Stack Developer who loves coding, finding creative solutions to problems, and building great projects.": "I’m a Full Stack Developer who loves coding, finding creative solutions to problems, and building great projects.",
+    "I’m passionate about web technologies and develop powerful, high-performance, and user-friendly applications using modern tools like Laravel, Livewire, Alpinejs and Tailwind CSS.": "I’m passionate about web technologies and develop powerful, high-performance, and user-friendly applications using modern tools like Laravel, Livewire, Alpinejs and Tailwind CSS.",
+    "My Projects": "My Projects"
+}
