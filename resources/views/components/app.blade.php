@@ -1,5 +1,9 @@
 <!DOCTYPE html>
-<html class="dark" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html
+    x-data="{ isDarkMode: localStorage.getItem('dark') === 'true'}"
+    x-init="$watch('isDarkMode', value => localStorage.setItem('dark',value))"
+    x-bind:class="{ 'dark': isDarkMode }"
+    lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="utf-8">

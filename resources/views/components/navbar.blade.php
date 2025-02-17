@@ -1,3 +1,4 @@
+<!-- @props(['isDarkMode']) -->
 <div class="sticky top-0 z-10">
     <nav x-data="{ isOpen: false }" class="bg-white/50 backdrop-blur-xl shadow dark:bg-slate-900/50 dark:border-slate-800 dark:border-b dark:backdrop-blur-xl">
         <div class="container px-16 py-4 mx-auto md:flex md:justify-between md:items-center">
@@ -32,6 +33,11 @@
                     <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">
                         Contact
                     </a>
+                    <button class="ml-6" @click="isDarkMode = ! isDarkMode">
+                        <svg class="w-5 h-5 fill-slate-900 dark:fill-sky-300" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M448 256c0-106-86-192-192-192l0 384c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
+                        </svg>
+                    </button>
                 </div>
             </div>
         </div>
