@@ -27,6 +27,7 @@ export default {
                 // 'hover': "#CBD5E1",
                 // 'bgPrimary': "#0F172A",     
                 // container : px-16 
+                // other content bg :  gray-800
             }
         },
     },
