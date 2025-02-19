@@ -30,11 +30,11 @@
             <div class="items-center lg:flex">
                 <div class="hidden md:block lg:w-1/2 w-full mt-6 lg:mt-0 ">
                     <div class="md:flex items-center justify-center">
-                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class=" cursor-pointer opacity-95 hover:opacity-100 transition-opacity object-cover object-center md:h-[17rem] md:w-[20rem]  md:max-w-3xl  shadow-2xl shadow-sky-300 " src="{{ asset('images/user/yusup3.jpg') }}" alt="user-hero-img">
+                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class=" cursor-pointer opacity-95 hover:opacity-100 transition-allduration-500 object-cover object-center md:h-[17rem] md:w-[20rem]  md:max-w-3xl  shadow-2xl shadow-sky-300 " src="{{ asset('images/user/yusup3.jpg') }}" alt="user-hero-img">
                     </div>
                     <div class=" md:flex items-center justify-center   ">
-                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class="cursor-pointer blur-md hover:blur-0 transition-all duration-1000  md:h-[17rem] md:w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup2.jpg') }}" alt="user-hero-img">
-                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class=" cursor-pointer blur-md hover:blur-0 transition-all duration-1000 object-cover object-center md:h-[17rem] md:w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
+                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class="cursor-pointer  opacity-85 hover:opacity-100 transition-all duration-500 md:h-[17rem] md:w-[20rem] object-cover object-top  md:max-w-3xl " src="{{ asset('images/user/yusup2.jpg') }}" alt="user-hero-img">
+                        <img style="clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);" class=" cursor-pointer opacity-85 hover:opacity-100 transition-all duration-500 object-cover object-center md:h-[17rem] md:w-[20rem]  md:max-w-3xl " src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
                     </div>
                 </div>
 
