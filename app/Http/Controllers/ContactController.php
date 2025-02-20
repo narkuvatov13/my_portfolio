@@ -28,7 +28,8 @@ class ContactController extends Controller
 
 
         // dd($email, $fullName, $message);
-        env('MAIL_FROM_ADDRESS', 'test.gmail.com');
+        // env('MAIL_FROM_ADDRESS', 'testaa.gmail.com');
+        // dd(env('MAIL_FROM_ADDRESS'));
         Mail::to("narkuwarow@gmail.com")->send(new ContactMail($fullName, $message, $email));
 
         session()->flash('status', 'Your email was sent successfully.');
