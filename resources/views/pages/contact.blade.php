@@ -1,10 +1,5 @@
 <x-app>
 
-    @session('status')
-    <div class="w-full bg-green-600">
-        <p>{{ session('status') }}</p>
-    </div>
-    @endsession
     <!-- contact -->
     <section class="">
         <div class="container px-6 pb-6 mx-auto">
@@ -80,4 +75,30 @@
             </div>
         </div>
     </section>
+
+    <x-slot:script>
+        <script>
+            @if(session('status'))
+            toastr.success("{{ __(session('status')) }}");
+            @endif
+
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-right",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+        </script>
+    </x-slot:script>
 </x-app>

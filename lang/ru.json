@@ -25,5 +25,6 @@
     "Message": "Сообщение",
     "Email address": "Электронный адрес",
     "Full Name": "Полное имя",
-    "What do you want to ask": "О чем вы хотите спросить"
+    "What do you want to ask": "О чем вы хотите спросить",
+    "Your email was sent successfully.": "Ваше письмо успешно отправлено."
 }

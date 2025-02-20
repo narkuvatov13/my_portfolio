@@ -26,5 +26,6 @@
     "Message": "Mesajınız",
     "Email address": "E-posta adresi",
     "Full Name": "Ad Soyad",
-    "What do you want to ask": "Ne sormak istiyorsun?"
+    "What do you want to ask": "Ne sormak istiyorsun?",
+    "Your email was sent successfully.": "E-postanız başarıyla gönderildi."
 }

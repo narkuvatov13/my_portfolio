@@ -23,6 +23,17 @@
     <link href="https://fonts.bunny.net/css?family=inter:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
     <link href="https://fonts.bunny.net/css?family=merriweather-sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i" rel="stylesheet" />
     <!-- <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> -->
+
+    <!-- Toastr -->
+    <!-- Toastr.js CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <!-- jQuery (Toastr için gerekli) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Toastr.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
 </head>
 
 <body id="home" class="font-sans antialiased bg-white dark:bg-slate-900">
@@ -34,6 +45,8 @@
     </div>
     <!-- <div class="mt-96 mb-96 ">sadasd</div> -->
     <x-footer></x-footer>
+
+    {{ $script }}
 </body>
 
 </html>
