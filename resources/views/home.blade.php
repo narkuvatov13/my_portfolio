@@ -25,7 +25,7 @@
     </section>
 
     <!-- About Me -->
-    <section class="py-10">
+    <section id="about" class="py-10">
         <div class="container mx-auto">
             <div class="items-center lg:flex">
                 <div class="hidden md:block lg:w-1/2 w-full mt-6 lg:mt-0 ">
@@ -64,8 +64,8 @@
         </div>
     </section>
 
-    <!-- Section -->
-    <section class=" bg-white dark:bg-gray-900 py-10">
+    <!--My Projects Section -->
+    <section id="my_projects" class=" bg-white dark:bg-slate-900 py-10">
         <div class="container px-6 py-10 mx-auto">
             <h1 class="text-3xl font-semibold text-center leading-relaxed tracking-wide text-dark-900 capitalize lg:text-4xl dark:text-slate-200">{{ __('My Recent Projects') }}</h1>
 
@@ -86,11 +86,7 @@
                         <p class=" capitalize text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300 cursor-pointer ">design directora</p>
 
                         <div class="flex justify-end items-center m-1 mx-2">
-                            <a href="https://www.linkedin.com/in/yusup-narkuvatov/" target="_blank" class="mx-2 text-slate-700 transition-colors duration-300 dark:text-slate-300 hover:text-sky-400 dark:hover:text-sky-500" aria-label="Reddit">
-                                <svg class="w-5 h-5 fill-current" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                    <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
-                                </svg>
-                            </a>
+
                             <a href="https://github.com/narkuvatov13" target="_blank" class="mx-2 text-slate-700 transition-colors duration-300 dark:text-slate-300 hover:text-sky-400 dark:hover:text-sky-500" aria-label="Github">
                                 <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">

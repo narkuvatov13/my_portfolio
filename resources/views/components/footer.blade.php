@@ -1,6 +1,6 @@
     <footer class="bg-inherit dark:bg-inherit mb-0 z-10 ">
         <div class="container flex flex-col items-center justify-between px-16 py-6 mx-auto space-y-4 sm:space-y-0 sm:flex-row">
-            <a href="{{ route('home') }}">
+            <a href="#home">
                 <h4 class="text-slate-700 text-2xl font-bold hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-200 tracking-wide">Thecodenarsoft</h4>
             </a>
 
@@ -20,6 +20,7 @@
                         </path>
                     </svg>
                 </a>
+
             </div>
         </div>
     </footer>

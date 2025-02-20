@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html
+<html class="scroll-smooth"
     x-data="{ isDarkMode: localStorage.getItem('dark') === 'true'}"
     x-init="$watch('isDarkMode', value => localStorage.setItem('dark',value))"
     x-bind:class="{ 'dark': isDarkMode }"
@@ -25,7 +25,7 @@
     <!-- <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" /> -->
 </head>
 
-<body class="font-sans antialiased bg-white dark:bg-slate-900">
+<body id="home" class="font-sans antialiased bg-white dark:bg-slate-900">
 
     <x-navbar></x-navbar>
 
