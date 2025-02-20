@@ -5,9 +5,9 @@
             <div class="items-center lg:flex">
                 <div class="w-full lg:w-1/2">
                     <div class="lg:max-w-lg">
-                        <h1 class="text-3xl font-semibold leading-relaxed tracking-wide text-slate-700 dark:text-white lg:text-4xl">{{ __('My Name is :Name',['Name'=>'Yusup']) }}<br> {{ __('I am') }} <span class="text-sky-500 ">Thecodenarsoft.</span></h1>
+                        <h1 class="text-3xl font-semibold leading-relaxed tracking-wide text-slate-900 dark:text-slate-200 lg:text-4xl">{{ __('My Name is :Name',['Name'=>'Yusup']) }}<br> {{ __('I am') }} <span class="text-sky-500 ">Thecodenarsoft.</span></h1>
 
-                        <p class="mt-3 mb-8 text-slate-900  dark:text-gray-400 text-md leading-relaxed tracking-wide">
+                        <p class="mt-3 mb-8 text-slate-900  dark:text-slate-400 text-md leading-relaxed tracking-wide">
                             {{ __('I’m a Full Stack Developer who loves coding, finding creative solutions to problems, and building great projects.') }} <br>
                             {{ __('I’m passionate about web technologies and develop powerful, high-performance, and user-friendly applications using modern tools like Laravel, Livewire, Alpinejs and Tailwind CSS.') }} <br>
                         </p>
@@ -40,20 +40,20 @@
 
                 <div class="w-full lg:w-1/2">
                     <div class="lg:max-w-lg">
-                        <h1 class="text-3xl font-semibold leading-relaxed tracking-wide text-slate-700 dark:text-white lg:text-4xl"> <br> {{ __('About Me') }}</h1>
+                        <h1 class="text-3xl font-semibold leading-relaxed tracking-wide text-slate-900 dark:text-slate-200 lg:text-4xl"> <br> {{ __('About Me') }}</h1>
 
-                        <p class="mt-3 mb-8 text-slate-900  dark:text-gray-400 text-md leading-relaxed tracking-wide">
+                        <p class="mt-3 mb-8 text-slate-700  dark:text-slate-400 text-md leading-relaxed tracking-wide">
                             {{ __('I am a professional passionate about software development and design.') }}
                             {{ __('After my software engineering education, I focused on web application development.') }}
                             {!! __('tech_message',['php'=>'<span class="text-sky-300 font-bold">PHP</span>','js'=>'<span class="text-sky-300 font-bold">JavaScript</span>']) !!}
                         </p>
-                        <p class="mt-3 mb-8 text-slate-900  dark:text-gray-400 text-md leading-relaxed tracking-wide">
+                        <p class="mt-3 mb-8 text-slate-700  dark:text-slate-400 text-md leading-relaxed tracking-wide">
                             {{ __('As someone who is always open to learning, I take care to keep myself updated about new technologies and trends.') }}
                             {{ __('I aim to combine aesthetics and functionality in my projects.') }}
                             {{ __('Thanks to my teamwork and problem-solving skills, I work efficiently with teams from different disciplines.') }}
 
                         </p>
-                        <p class="mt-3 mb-8 text-slate-900  dark:text-gray-400 text-md leading-relaxed tracking-wide">
+                        <p class="mt-3 mb-8 text-slate-900  dark:text-slate-400 text-md leading-relaxed tracking-wide">
                             {{ __("My goal is to use technology to create solutions that will make people's lives easier.") }}
                             {{ __('The projects in my portfolio are a reflection of this passion and professional approach.') }}
                             {{ __('For more information and to see my projects in detail, please browse the sections below.') }}
@@ -64,6 +64,49 @@
         </div>
     </section>
 
+    <!-- Section -->
+    <section class=" bg-white dark:bg-gray-900 py-10">
+        <div class="container px-6 py-10 mx-auto">
+            <h1 class="text-3xl font-semibold text-center leading-relaxed tracking-wide text-dark-900 capitalize lg:text-4xl dark:text-slate-200">{{ __('My Recent Projects') }}</h1>
 
+            <p class="max-w-2xl mx-auto my-2 text-center text-slate-700 dark:text-slate-400 tracking-wide">
+                {{ __('Every project is a new learning and development opportunity. Even if you take small steps at the beginning, each line of code takes you further. The important thing is not to start perfectly, but to keep moving forward. Never stop experimenting, exploring and creating!') }}
+            </p>
+
+
+            <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-16 md:grid-cols-2 xl:grid-cols-4">
+
+                <div class="relative flex flex-col items-center justify-center rounded-xl shadow-md shadow-slate-300 dark:shadow-slate-700">
+
+                    <img class="object-cover w-full h-48 md:h-64 rounded-t-xl" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+
+                    <div class="w-full  text-center bg-inherit p-2 ">
+                        <h1 class="md:text-2xl font-semibold text-slate-900 capitalize dark:text-slate-200 tracking-wide ">arthur melo</h1>
+
+                        <p class=" capitalize text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300 cursor-pointer ">design directora</p>
+
+                        <div class="flex justify-end items-center m-1 mx-2">
+                            <a href="https://www.linkedin.com/in/yusup-narkuvatov/" target="_blank" class="mx-2 text-slate-700 transition-colors duration-300 dark:text-slate-300 hover:text-sky-400 dark:hover:text-sky-500" aria-label="Reddit">
+                                <svg class="w-5 h-5 fill-current" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
+                                </svg>
+                            </a>
+                            <a href="https://github.com/narkuvatov13" target="_blank" class="mx-2 text-slate-700 transition-colors duration-300 dark:text-slate-300 hover:text-sky-400 dark:hover:text-sky-500" aria-label="Github">
+                                <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M12.026 2C7.13295 1.99937 2.96183 5.54799 2.17842 10.3779C1.395 15.2079 4.23061 19.893 8.87302 21.439C9.37302 21.529 9.55202 21.222 9.55202 20.958C9.55202 20.721 9.54402 20.093 9.54102 19.258C6.76602 19.858 6.18002 17.92 6.18002 17.92C5.99733 17.317 5.60459 16.7993 5.07302 16.461C4.17302 15.842 5.14202 15.856 5.14202 15.856C5.78269 15.9438 6.34657 16.3235 6.66902 16.884C6.94195 17.3803 7.40177 17.747 7.94632 17.9026C8.49087 18.0583 9.07503 17.99 9.56902 17.713C9.61544 17.207 9.84055 16.7341 10.204 16.379C7.99002 16.128 5.66202 15.272 5.66202 11.449C5.64973 10.4602 6.01691 9.5043 6.68802 8.778C6.38437 7.91731 6.42013 6.97325 6.78802 6.138C6.78802 6.138 7.62502 5.869 9.53002 7.159C11.1639 6.71101 12.8882 6.71101 14.522 7.159C16.428 5.868 17.264 6.138 17.264 6.138C17.6336 6.97286 17.6694 7.91757 17.364 8.778C18.0376 9.50423 18.4045 10.4626 18.388 11.453C18.388 15.286 16.058 16.128 13.836 16.375C14.3153 16.8651 14.5612 17.5373 14.511 18.221C14.511 19.555 14.499 20.631 14.499 20.958C14.499 21.225 14.677 21.535 15.186 21.437C19.8265 19.8884 22.6591 15.203 21.874 10.3743C21.089 5.54565 16.9181 1.99888 12.026 2Z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
 
 </x-app>

@@ -33,6 +33,7 @@
                     <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#">
                         {{ __('Contact') }}
                     </a>
+
                     <!-- Language Button -->
                     <div x-data="{ isOpen: false }" class="relative inline-block ">
                         <!-- Dropdown toggle button -->
@@ -53,7 +54,7 @@
                             x-transition:leave="transition ease-in duration-100"
                             x-transition:leave-start="opacity-100 scale-100"
                             x-transition:leave-end="opacity-0 scale-90"
-                            class="absolute right-0 z-20 w-25 py-2 mt-2 origin-top-right bg-white rounded-md shadow-xl dark:bg-gray-900">
+                            class="absolute right-0 z-20 w-25  mt-2 origin-top-right bg-slate-200 rounded-md shadow-xl dark:bg-gray-800">
 
                             <a href="locale/en" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">{{ __('English') }}</a>
                             <a href="locale/ru" class="block px-4 py-3 text-sm text-gray-600 capitalize transition-colors duration-300 transform dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-white">{{ __('Russian') }}</a>
