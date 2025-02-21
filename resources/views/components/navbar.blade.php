@@ -3,7 +3,7 @@
     <nav x-data="{ isOpen: false }" class="bg-white/50 backdrop-blur-xl dark:bg-slate-900/50 shadow-md  dark:shadow dark:shadow-slate-700 dark:backdrop-blur-xl">
         <div class="container px-16 py-4 mx-auto md:flex md:justify-between md:items-center">
             <div class="flex items-center justify-between">
-                <a href="#home">
+                <a href="{{ Route::currentRouteName() == 'contact' ? route('home') : '#home' }}">
                     <h4 class="text-slate-700 text-2xl font-bold hover:text-slate-900 dark:text-slate-100 dark:hover:text-slate-200 tracking-wide">Thecodenarsoft</h4>
                 </a>
 
@@ -24,13 +24,13 @@
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
             <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']" class="absolute mt-4 inset-x-0 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out bg-white dark:bg-slate-800  md:dark:bg-inherit md:mt-0 md:p-0 md:top-0 md:relative md:bg-transparent md:w-auto md:opacity-100 md:translate-x-0 md:flex md:items-center">
                 <div class="flex flex-col items-center justify-around gap-4 md:flex-row md:mx-6">
-                    <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#my_projects"">
+                    <a href="{{ Route::currentRouteName() == 'contact' ? route('home') : '#my_projects' }}" class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0">
                         {{ __('Projects') }}
                     </a>
-                    <a class=" my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="#about">
+                    <a href=" {{ Route::currentRouteName() == 'contact' ? route('home') : '#about' }}" class=" my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0">
                         {{ __('About') }}
                     </a>
-                    <a class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0" href="{{ route('contact') }}">
+                    <a href="{{ route('contact') }}" class="my-2 text-slate-700 transition-colors duration-300 transform dark:text-slate-300 hover:text-sky-500 dark:hover:text-sky-400 md:mx-4 md:my-0">
                         {{ __('Contact') }}
                     </a>
 

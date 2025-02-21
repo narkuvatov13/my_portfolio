@@ -46,7 +46,6 @@
     <!-- <div class="mt-96 mb-96 ">sadasd</div> -->
     <x-footer></x-footer>
 
-    {{ $script }}
-</body>
+    
 
 </html>

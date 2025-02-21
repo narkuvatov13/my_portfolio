@@ -13,6 +13,7 @@ Route::get('/', function () {
 })->name('home');
 
 
-Route::get('locale/{lang}', [LocaleController::class, 'setLocale']);
+Route::get('/locale/{lang}', [LocaleController::class, 'setLocale']);
+Route::get('/contact/locale/{lang}', [LocaleController::class, 'setLocale']);
 Route::get('/contact', [ContactController::class, 'index'])->name('contact');
 Route::post('/contact/store/', [ContactController::class, 'store'])->name('contact.store');
