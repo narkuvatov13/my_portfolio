@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="scroll-smooth"
-    x-data="{ isDarkMode: localStorage.getItem('dark') === 'true'}"
+    x-data="{ isDarkMode: localStorage.getItem('dark') === 'true' || localStorage.getItem('dark') === null}"
     x-init="$watch('isDarkMode', value => localStorage.setItem('dark',value))"
     x-bind:class="{ 'dark': isDarkMode }"
     lang="{{ str_replace('_', '-', app()->getLocale()) }}">
