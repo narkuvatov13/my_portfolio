@@ -3,7 +3,7 @@
     <section class="py-10">
         <div class="container  mx-auto">
             <div class="items-center lg:flex">
-                <div class="w-full lg:w-1/2">
+                <div class="w-full lg:w-1/2 mb-32">
                     <div class="lg:max-w-lg">
                         <h1 class="text-3xl font-semibold leading-relaxed tracking-wide text-slate-900 dark:text-slate-200 lg:text-4xl">{{ __('My Name is :Name',['Name'=>'Yusup']) }}<br> {{ __('I am') }} <span class="text-sky-500 ">Thecodenarsoft.</span></h1>
 
@@ -18,7 +18,7 @@
                 </div>
 
                 <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2  ">
-                    <img class="hidden object-cover object-center rounded-full  md:h-[20rem] md:w-[20rem]  md:block xl:h-[35rem] xl:w-[35rem]  lg:max-w-3xl  " src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
+                    <img class=" object-cover object-center rounded-full w-full h-48   md:h-[20rem] md:w-[20rem]  md:block xl:h-[35rem] xl:w-[35rem]  lg:max-w-3xl  " src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
                 </div>
             </div>
         </div>
