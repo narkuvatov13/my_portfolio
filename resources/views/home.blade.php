@@ -123,12 +123,12 @@
                             @csrf
                             <div class="flex-1">
                                 <label class="block mb-2 text-sm text-slate-900 dark:text-slate-200">{{ __('Full Name') }}</label>
-                                <input type="text" name="name" class="block w-full px-5 py-3 mt-2 text-slate-900 placeholder-slate-400 bg-white border border-slate-200 rounded-md dark:placeholder-slate-700 dark:bg-slate-900 dark:text-gray-300 dark:border-slate-700 focus:border-sky-500 dark:focus:border-sky-500 focus:ring-sky-500 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                <input type="text" name="name" class="block w-full text-xs px-2 py-1 md:px-5  md:py-3 md:text-base mt-2 text-slate-900 placeholder-slate-400 bg-white border border-slate-200 rounded-md dark:placeholder-slate-700 dark:bg-slate-900 dark:text-gray-300 dark:border-slate-700 focus:border-sky-500 dark:focus:border-sky-500 focus:ring-sky-500 focus:outline-none focus:ring focus:ring-opacity-40" />
                             </div>
 
                             <div class="flex-1 mt-6">
                                 <label class="block mb-2 text-sm text-slate-900 dark:text-slate-200">{{ __('Email address') }}</label>
-                                <input type="text" name="email" class="block w-full px-5 py-3 mt-2 text-slate-900 placeholder-slate-400 bg-white border border-slate-200 rounded-md dark:placeholder-slate-700 dark:bg-slate-900 dark:text-gray-300 dark:border-slate-700 focus:border-sky-500 dark:focus:border-sky-500 focus:ring-sky-500 focus:outline-none focus:ring focus:ring-opacity-40" required />
+                                <input type="text" name="email" class="block w-full text-xs px-2 py-1 md:px-5  md:py-3 md:text-base mt-2 text-slate-900 placeholder-slate-400 bg-white border border-slate-200 rounded-md dark:placeholder-slate-700 dark:bg-slate-900 dark:text-gray-300 dark:border-slate-700 focus:border-sky-500 dark:focus:border-sky-500 focus:ring-sky-500 focus:outline-none focus:ring focus:ring-opacity-40" required />
                                 @error('email')
                                 <p class="text-sm text-red-600">{{ __($message )}}</p>
                                 @enderror
