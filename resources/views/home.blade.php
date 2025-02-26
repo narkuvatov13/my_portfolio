@@ -19,7 +19,7 @@
 
                 <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2  ">
                     <img class=" object-cover object-center rounded-full w-full h-48   md:h-[20rem] md:w-[20rem]  md:block xl:h-[35rem] xl:w-[35rem]  lg:max-w-3xl  " src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
-                </div>
+                </div>+
             </div>
         </div>
     </section>
@@ -104,5 +104,73 @@
             </div>
         </div>
     </section>
+
+    <!-- contact -->
+    <section class="">
+        <div class="container px-6 pb-6 mx-auto">
+            <div class="lg:flex lg:items-center lg:-mx-6">
+                <div class="lg:w-1/2 lg:mx-6">
+                    <h1 class="text-xl font-semibold text-slate-900 capitalize dark:text-slate-200 lg:text-3xl">
+                        {{ __('Contact us for more info') }}
+                    </h1>
+                </div>
+
+                <div class="mt-8 lg:w-1/2 lg:mx-6">
+                    <div class="w-full px-0 md:px-8 py-10 mx-auto overflow-hidden  md:bg-white md:rounded-lg md:shadow-2xl md:dark:bg-slate-900 lg:max-w-xl md:shadow-slate-700/50 md:dark:shadow-black/50">
+                        <h1 class="text-md font-medium text-slate-900 dark:text-slate-200">{{ __('What do you want to ask') }}</h1>
+
+                        <form class="mt-6" enctype="multipart/form-data" action="{{ route('contact.store')}}" method="POST">
+                            @csrf
+                            <div class="flex-1">
+                                <label class="block mb-2 text-sm text-slate-900 dark:text-slate-200">{{ __('Full Name') }}</label>
+                                <input type="text" name="name" class="block w-full px-5 py-3 mt-2 text-slate-900 placeholder-slate-400 bg-white border border-slate-200 rounded-md dark:placeholder-slate-700 dark:bg-slate-900 dark:text-gray-300 dark:border-slate-700 focus:border-sky-500 dark:focus:border-sky-500 focus:ring-sky-500 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+
+                            <div class="flex-1 mt-6">
+                                <label class="block mb-2 text-sm text-slate-900 dark:text-slate-200">{{ __('Email address') }}</label>
+                                <input type="text" name="email" class="block w-full px-5 py-3 mt-2 text-slate-900 placeholder-slate-400 bg-white border border-slate-200 rounded-md dark:placeholder-slate-700 dark:bg-slate-900 dark:text-gray-300 dark:border-slate-700 focus:border-sky-500 dark:focus:border-sky-500 focus:ring-sky-500 focus:outline-none focus:ring focus:ring-opacity-40" required />
+                                @error('email')
+                                <p class="text-sm text-red-600">{{ __($message )}}</p>
+                                @enderror
+                            </div>
+
+                            <div class="w-full mt-6">
+                                <label class="block mb-2 text-sm text-slate-900 dark:text-slate-200">{{ __('Message') }}</label>
+                                <textarea name="message" class="block w-full  px-5 py-3 mt-2 text-slate-900 placeholder-slate-400 bg-white border border-slate-200 rounded-md dark:placeholder-slate-700 dark:bg-slate-900 dark:text-gray-300 dark:border-slate-700 focus:border-sky-500 dark:focus:border-sky-500 focus:ring-sky-500 focus:outline-none focus:ring focus:ring-opacity-40"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-sky-500 rounded-md hover:bg-sky-400 focus:outline-none focus:ring focus:ring-sky-300 focus:ring-opacity-50">
+                                {{ __('Send') }}
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        @if(session('status'))
+        toastr.success("{{ __(session('status')) }}");
+        @endif
+
+        toastr.options = {
+            "closeButton": true,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": true,
+            "positionClass": "toast-top-right",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "5000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+    </script>
 
 </x-app>
