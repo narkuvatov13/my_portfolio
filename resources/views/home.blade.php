@@ -1,7 +1,7 @@
 <x-app>
     <!-- Hero Section -->
-    <section class="py-10">
-        <div class="container  mx-auto">
+    <section class="py-8">
+        <div class=" container mx-auto">
             <div class="items-center lg:flex">
                 <div class="w-full lg:w-1/2 mb-32">
                     <div class="lg:max-w-lg">
@@ -25,7 +25,7 @@
     </section>
 
     <!-- About Me -->
-    <section id="about" class="py-10">
+    <section id="about" class="py-12">
         <div class="container mx-auto">
             <div class="items-center lg:flex">
                 <div class="hidden md:block lg:w-1/2 w-full mt-6 lg:mt-0 ">
@@ -65,7 +65,7 @@
     </section>
 
     <!--My Projects Section -->
-    <section id="my_projects" class=" bg-white dark:bg-slate-900 py-10">
+    <section id="my_projects" class="py-12">
         <div class="container px-6 py-10 mx-auto">
             <h1 class="text-3xl font-semibold text-center leading-relaxed tracking-wide text-dark-900 capitalize lg:text-4xl dark:text-slate-200">{{ __('My Recent Projects') }}</h1>
 
@@ -106,7 +106,7 @@
     </section>
 
     <!-- contact -->
-    <section class="">
+    <section id="contact" class="py-12">
         <div class="container px-6 pb-6 mx-auto">
             <div class="lg:flex lg:items-center lg:-mx-6">
                 <div class="lg:w-1/2 lg:mx-6">
