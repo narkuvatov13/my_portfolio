@@ -78,10 +78,10 @@
 
                 <div class="relative flex flex-col items-center justify-center rounded-xl shadow-md shadow-slate-300 dark:shadow-slate-700">
 
-                    <img class="object-cover w-full h-48 md:h-64 rounded-t-xl" src="https://images.unsplash.com/photo-1531590878845-12627191e687?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="">
+                    <img class="object-cover w-full h-48 md:h-64 rounded-t-xl" src="" alt="Project Image">
 
                     <div class="w-full  text-center bg-inherit p-2 ">
-                        <h1 class="md:text-2xl font-semibold text-slate-900 capitalize dark:text-slate-200 tracking-wide ">arthur melo</h1>
+                        <h1 class="md:text-2xl font-semibold text-slate-900 capitalize dark:text-slate-200 tracking-wide ">arthur meloasdadsada</h1>
 
                         <p class=" capitalize text-slate-700 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-300 cursor-pointer ">design directora</p>
 
