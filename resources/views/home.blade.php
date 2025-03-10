@@ -1,9 +1,9 @@
 <x-app>
     <!-- Hero Section -->
-    <section class="py-8">
+    <section class="py-2 sm:py-8">
         <div class=" container mx-auto">
             <div class="items-center lg:flex">
-                <div class="w-full lg:w-1/2 mb-32">
+                <div class="w-full lg:w-1/2">
                     <div class="lg:max-w-lg">
                         <h1
                             class="text-3xl font-semibold leading-relaxed tracking-wide text-slate-900 dark:text-slate-200 lg:text-4xl">
@@ -22,16 +22,16 @@
                     </div>
                 </div>
 
-                <div class="flex items-center justify-center w-full mt-6 lg:mt-0 lg:w-1/2  ">
-                    <img class=" object-cover object-center rounded-full w-full h-48   md:h-[20rem] md:w-[20rem]  md:block xl:h-[35rem] xl:w-[35rem]  lg:max-w-3xl  "
+                <div class="flex items-center justify-center w-full mt-10 lg:mt-0 lg:w-1/2  ">
+                    <img class=" object-cover rounded-full w-full h-48   md:h-[20rem] md:w-[20rem]  md:block xl:h-[35rem] xl:w-[35rem]  lg:max-w-3xl  "
                         src="{{ asset('images/user/yusup1.jpg') }}" alt="user-hero-img">
-                </div>+
+                </div>
             </div>
         </div>
     </section>
 
     <!-- About Me -->
-    <section id="about" class="py-12">
+    <section id="about" class="py-4 sm:py-12">
         <div class="container mx-auto">
             <div class="items-center lg:flex">
                 <div class="hidden md:block lg:w-1/2 w-full mt-6 lg:mt-0 ">
@@ -54,7 +54,7 @@
                     <div class="lg:max-w-lg">
                         <h1
                             class="text-3xl font-semibold leading-relaxed tracking-wide text-slate-900 dark:text-slate-200 lg:text-4xl">
-                            <br> {{ __('About Me') }}
+                            {{ __('About Me') }}
                         </h1>
 
                         <p class="mt-3 mb-8 text-slate-700  dark:text-slate-400 text-md leading-relaxed tracking-wide">
