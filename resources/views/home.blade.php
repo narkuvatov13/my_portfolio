@@ -16,7 +16,7 @@
                             {{ __('I’m passionate about web technologies and develop powerful, high-performance, and user-friendly applications using modern tools like Laravel, Livewire, Alpinejs and Tailwind CSS.') }}
                             <br>
                         </p>
-                        <x-link-button class="px-6 py-4 text-sm">
+                        <x-link-button url="#my_projects" class="px-6 py-4 text-sm">
                             {{ __('My Projects') }}
                         </x-link-button>
                     </div>
